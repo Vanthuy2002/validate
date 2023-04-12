@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./bg-form.jpg) top center / cover no-repeat;
+}
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.heading {
+  font-size: 1.8rem;
+}
+.desc {
+  font-size: 1.4rem;
+  color: #1f1d1d;
+}
+
+.heading,
+.desc {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 24px 12px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.form-group .form-status {
+  font-size: 1.2rem;
+}
+
+.submit {
+  width: 100%;
+  padding: 12px 24px;
+  color: #000;
+  border-radius: 5px;
+  background-color: #1788de;
+  font-size: 1.6rem;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+.notyfi {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+}
+
+.notyfi .toast {
+  padding: 12px 24px;
+  border-radius: 5px;
+  background-color: #2178dc;
+  color: white;
+}
+
+.toast {
+  animation: slideIn 0.5s linear;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(calc(100% + 32px));
+  }
+  100% {
+    transform: translate(0);
+  }
+}

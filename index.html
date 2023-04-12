@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./components/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="heading">Sign Up</h3>
+      <p class="desc">Join us with 25 milions users over in the world</p>
+
+      <form action="" method="POST">
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Enter username...." />
+          <p class="form-status"></p>
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="email" placeholder="Enter email...." />
+          <p class="form-status"></p>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password...."
+          />
+          <p class="form-status"></p>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            name="pass-confirm"
+            placeholder="Enter again password...."
+          />
+          <p class="form-status"></p>
+        </div>
+
+        <button class="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <div class="notyfi"></div>
+    <script src="./components/main.js"></script>
+  </body>
+</html>
